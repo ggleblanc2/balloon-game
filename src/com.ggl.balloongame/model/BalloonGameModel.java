@@ -47,11 +47,9 @@ public class BalloonGameModel {
 			int y = (int) (Math.random()
 					* (drawingPanelDimension.height - doubleBorder) + border);
 			Balloon balloon = new Balloon(new Point(x, y), colors[colorIndex]);
-			System.out.println(index + " " + x + " " + y);
 			
 			if (!isTouching(balloon)) {
 				validBalloons.add(balloon);
-				System.out.println("  Added");
 				index++;
 			}
 		}
